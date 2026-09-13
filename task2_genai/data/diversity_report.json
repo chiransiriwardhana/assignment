@@ -1,0 +1,122 @@
+{
+  "total_examples": 111,
+  "topic_distribution": {
+    "anti_money_laundering_kyc": 14,
+    "personal_account_dealing_insider_trading": 14,
+    "gifts_and_entertainment": 14,
+    "conflicts_of_interest": 14,
+    "market_abuse_information_barriers": 14,
+    "whistleblowing": 14,
+    "data_privacy_client_confidentiality": 13,
+    "outside_business_activities": 14
+  },
+  "num_distinct_topics": 8,
+  "prompt_length_words": {
+    "min": 34,
+    "max": 78,
+    "mean": 52.054054054054056
+  },
+  "top_keywords": [
+    [
+      "must",
+      118
+    ],
+    [
+      "any",
+      90
+    ],
+    [
+      "employees",
+      78
+    ],
+    [
+      "compliance",
+      76
+    ],
+    [
+      "should",
+      49
+    ],
+    [
+      "report",
+      49
+    ],
+    [
+      "from",
+      44
+    ],
+    [
+      "client",
+      43
+    ],
+    [
+      "what",
+      39
+    ],
+    [
+      "within",
+      39
+    ],
+    [
+      "can",
+      39
+    ],
+    [
+      "business",
+      38
+    ],
+    [
+      "not",
+      34
+    ],
+    [
+      "information",
+      31
+    ],
+    [
+      "may",
+      31
+    ],
+    [
+      "employee",
+      31
+    ],
+    [
+      "days",
+      29
+    ],
+    [
+      "officer",
+      29
+    ],
+    [
+      "their",
+      29
+    ],
+    [
+      "they",
+      27
+    ],
+    [
+      "need",
+      26
+    ],
+    [
+      "kyc",
+      25
+    ],
+    [
+      "reported",
+      24
+    ],
+    [
+      "such",
+      24
+    ],
+    [
+      "trading",
+      24
+    ]
+  ],
+  "escalation_ratio": 0.441
+}
