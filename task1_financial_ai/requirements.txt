@@ -1,0 +1,33 @@
+yfinance>=0.2.40
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.6.0
+matplotlib>=3.7.0
+markdown>=3.5.0
+
+# Data generation / evaluation (CPU-friendly, works outside Colab too)
+requests>=2.31.0
+pydantic>=2.6.0
+rouge-score>=0.1.2
+bert-score>=0.3.13   # optional additional metric - needs network for first download
+
+# Fine-tuning (requires a CUDA GPU runtime - e.g. Google Colab T4/L4)
+torch>=2.2.0
+transformers>=4.42.0
+peft>=0.11.0
+trl>=0.9.4
+bitsandbytes>=0.43.1
+accelerate>=0.31.0
+datasets>=2.19.0
+
+# Bonus - RAG fallback
+chromadb>=0.5.0
+
+
+
+
+
+huggingface_hub>=0.23.0
+
