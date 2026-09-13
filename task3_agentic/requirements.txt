@@ -1,0 +1,17 @@
+yfinance>=0.2.40
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+pydantic>=2.6.0
+
+# Agent framework (LangGraph, built on LangChain)
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-groq>=0.1.9
+langgraph>=0.1.19
+
+# Web search tool
+duckduckgo-search>=6.1.0
+
+# Bonus - observability dashboard
+streamlit>=1.36.0
