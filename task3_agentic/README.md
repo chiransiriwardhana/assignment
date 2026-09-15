@@ -104,17 +104,3 @@ task3_agentic/
    ```
 4. `logs/agent_trace.jsonl` and `logs/agent_message_trace.jsonl` are created
    on first run - commit them (with real content) as part of the submission.
-
-## Known limitations / what I'd improve with more time
-
-- `llm_sentiment` and the `_structuring_model()` calls in `multi_agent.py`
-  add extra Groq API calls beyond the ReAct loop itself, which is a bit
-  free-tier-rate-limit heavy if run many times back to back — worth adding a
-  short backoff/retry wrapper for production use.
-- The persistent cache key is ticker + calendar date only; a real system
-  would probably also invalidate the cache once markets have moved
-  significantly intraday, not just at midnight.
-- Agent B's clarification question is unconstrained free text validated only
-  by a Pydantic `min_length` - a stricter schema (e.g. an enum of allowed
-  question categories) would make the critique loop more predictable to grade
-  and to build further automation on top of.
