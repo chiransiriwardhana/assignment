@@ -132,16 +132,3 @@ task2_genai/
    merges/saves the model, then evaluates base vs fine-tuned.
 4. Fill in `outputs/manual_review.csv` by hand after the notebook produces it, then
    re-run the hallucination-rate cell.
-
-## Known limitations / what I'd improve with more time
-
-- Dataset generation makes one teacher call per topic requesting a batch of 15
-  examples; very long batches risk truncation on some providers — retrying with a
-  smaller batch size per call would make this more robust at scale.
-- LLM-as-judge introduces its own noise (a 70B model judging a 7B model's output is
-  not a perfect gold standard); a held-out human-labelled subset to sanity-check
-  judge agreement would strengthen Task 2C further.
-- The RAG fallback's confidence trigger relies on the model's *self-reported*
-  confidence field rather than true perplexity — reasonable for free-tier APIs that
-  don't expose logprobs, but worth revisiting if moving to a self-hosted endpoint
-  that does.
