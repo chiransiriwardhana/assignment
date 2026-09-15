@@ -68,7 +68,7 @@ task1_financial/
 
 1. `pip install -r requirements.txt`
 2. Copy `.env.example` to `.env` (or set Colab secrets) and add a free Groq or OpenRouter
-   API key. **Never commit real keys.**
+   API key.
 3. Run the notebook `notebooks/Task1_Equity_Research.ipynb` top to bottom, or:
    ```bash
    GROQ_API_KEY=your_key python main.py --ticker AAPL
