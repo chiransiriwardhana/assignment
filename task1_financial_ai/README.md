@@ -58,7 +58,7 @@ task1_financial/
 - Prompts are defined as constants in `prompts.py`, fully separated from `llm_reasoning.py`,
   with explicit system/user roles.
 
-**Bonus - Report Rendering**
+**Report Rendering**
 - `report_generator.py` builds a one-page Markdown brief (company snapshot, technical
   outlook, news sentiment summary with top 3 headlines by confidence, LLM recommendation,
   and a mandatory risk disclaimer), then renders it to a styled HTML page with an embedded
